@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Editar Carro</title>
+</head>
+<body>
+    <h1>Editar Carro</h1>
+
+    <form action="{{ url_for('lista_carros', carro_id=carro._id) }}" method="POST">
+        <label for="marca">Marca:</label>
+        <input type="text" id="marca" name="marca" value="{{ carro.marca }}" required>
+
+        <label for="modelo">Modelo:</label>
+        <input type="text" id="modelo" name="modelo" value="{{ carro.modelo }}" required>
+
+        <label for="ano">Ano:</label>
+        <input type="text" id="ano" name="ano" value="{{ carro.ano }}" required>
+
+        <label for="preco">Preço:</label>
+        <input type="text" id="preco" name="preco" value="{{ carro.preco }}" required>
+
+        <label for="categoria">Categoria:</label>
+        <input type="text" id="categoria" name="categoria" value="{{ carro.categoria }}" required>
+
+        <label for="combustivel">Combustível:</label>
+        <input type="text" id="combustivel" name="combustivel" value="{{ carro.combustivel }}" required>
+
+        <label for="transmissao">Transmissão:</label>
+        <input type="text" id="transmissao" name="transmissao" value="{{ carro.transmissao }}" required>
+
+        <input type="submit" value="Salvar">
+    </form>
+
+    <br>
+    <a href="{{ url_for('lista_carros') }}">Voltar para a lista de carros</a>
+</body>
+</html>

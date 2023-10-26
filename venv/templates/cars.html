@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de Carros</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .edit-button, .delete-button {
+            padding: 4px 8px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .edit-button {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .delete-button {
+            background-color: #f44336;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lista de Carros</h1>
+    <table>
+        <tr>
+            <th>Marca</th>
+            <th>Modelo</th>
+            <th>Ano</th>
+            <th>Preço</th>
+            <th>Categoria</th>
+            <th>Combustível</th>
+            <th>Câmbio</th>
+            <th>Ações</th>
+        </tr>
+        {% for carro in carros %}
+        <tr>
+            <td>{{ carro.marca }}</td>
+            <td>{{ carro.modelo }}</td>
+            <td>{{ carro.ano }}</td>
+            <td>{{ carro.preco }}</td>
+            <td>{{ carro.categoria }}</td>
+            <td>{{ carro.combustivel }}</td>
+            <td>{{ carro.cambio }}</td>
+            <td>
+                <button class="edit-button" onclick="editCarro('{{ carro._id }}')">Editar</button>
+                <button class="delete-button" onclick="deleteCarro('{{ carro._id }}')">Excluir</button>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <script>
+        function editCarro(carroId) {
+            // Redirecionar para a página de edição do carro com base no ID
+            window.location.href = '/carros/' + carroId + '/edit';
+        }
+
+        function deleteCarro(carroId) {
+            // Confirmar a exclusão do carro
+            if (confirm('Tem certeza que deseja excluir este carro?')) {
+                // Enviar uma solicitação DELETE para a rota de exclusão do carro com base no ID
+                fetch('/carros/' + carroId, { method: 'DELETE' })
+                    .then(function(response) {
+                        if (response.ok) {
+                            // Recarregar a página para atualizar a lista de carros
+                            window.location.reload();
+                        } else {
+                            alert('Ocorreu um erro ao excluir o carro.');
+                        }
+                    })
+                    .catch(function(error) {
+                        console.log(error);
+                        alert('Ocorreu um erro ao excluir o carro.');
+                    });
+            }
+        }
+    </script>
+</body>
+</html>

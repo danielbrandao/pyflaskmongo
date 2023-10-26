@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de Carros</title>
+</head>
+<body>
+    <h1>Lista de Carros</h1>
+
+    <table>
+        <tr>
+            <th>Marca</th>
+            <th>Modelo</th>
+            <th>Ano</th>
+            <th>Preço</th>
+            <th>Categoria</th>
+            <th>Combustível</th>
+            <th>Transmissão</th>
+            <th>Ações</th>
+        </tr>
+        {% for carro in carros %}
+        <tr>
+            <td>{{ carro.marca }}</td>
+            <td>{{ carro.modelo }}</td>
+            <td>{{ carro.ano }}</td>
+            <td>{{ carro.preco }}</td>
+            <td>{{ carro.categoria }}</td>
+            <td>{{ carro.combustivel }}</td>
+            <td>{{ carro.transmissao }}</td>
+            <td>
+
+                <a href="{{ url_for('editar_carro', carro_id=carro._id|string) }}">Editar</a>
+                <a href="{{ url_for('excluir_carro', carro_id=carro._id|string) }}">Excluir</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <a href="{{ url_for('inserir_carro') }}">Inserir Carro</a>
+</body>
+</html>

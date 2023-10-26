@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Deletar Carro</title>
+</head>
+<body>
+    <h1>Deletar Carro</h1>
+    <p>Você tem certeza que deseja deletar o carro?</p>
+    <form action="/carros/{{ carro._id }}" method="post">
+        <input type="hidden" name="_method" value="DELETE">
+        <input type="submit" value="Deletar">
+    </form>
+</body>
+</html>
