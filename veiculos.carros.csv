@@ -1,0 +1,11 @@
+_id,Marca,Modelo,Ano,Preco,marca,modelo,preco,ano,categoria,cambio,combustivel,transmissao
+645d2e4d70e67097005d2c72,Ford,Bronco,2023,150000,,,,,,,,
+645d34bb19d59dc9186fa385,Ford,Ranger,2022,135000,,,,,,,,
+64623c2ac55bdcbd0dc062f2,,,,,Ford,F-1000,4000,1990,,,,
+64623f0c9d444b5888b1c123,,,,,Fiat,Palio,21000,2000,,,,
+6462421362e162b0ab37359a,,,,,Fiat,Palio weekend,21500,1998,SUV,Automatico,,
+64627ef49de9bf074ca09a9a,,,,,Fiat,Uno,2000,1995,Hatch,Manual,,
+646289cc2fec024b6ad448d0,,,,,Chevrolet,Onix,35000,2018,Hatch,,Flex,Manual
+647109faf711fe6762c02df4,,,,,Fiat,Palio,35000,2018,caminhonete,Automatico,,
+64f8ceb1f58d61898be59e6d,,,,,Toyota,Corolla,87930,2019,Sedan,Manual,,
+653963a01974e24c5755deae,,,,,Ford,Fusion,45000,2015,Sedan,Automático,Flex,

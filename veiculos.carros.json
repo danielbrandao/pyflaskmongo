@@ -1,0 +1,104 @@
+[{
+  "_id": {
+    "$oid": "645d2e4d70e67097005d2c72"
+  },
+  "Marca": "Ford",
+  "Modelo": "Bronco",
+  "Ano": 2023,
+  "Preco": 150000
+},
+{
+  "_id": {
+    "$oid": "645d34bb19d59dc9186fa385"
+  },
+  "Marca": "Ford",
+  "Modelo": "Ranger",
+  "Ano": 2022,
+  "Preco": 135000
+},
+{
+  "_id": {
+    "$oid": "64623c2ac55bdcbd0dc062f2"
+  },
+  "marca": "Ford",
+  "modelo": "F-1000",
+  "preco": "4000",
+  "ano": "1990"
+},
+{
+  "_id": {
+    "$oid": "64623f0c9d444b5888b1c123"
+  },
+  "marca": "Fiat",
+  "modelo": "Palio",
+  "preco": "21000",
+  "ano": "2000"
+},
+{
+  "_id": {
+    "$oid": "6462421362e162b0ab37359a"
+  },
+  "marca": "Fiat",
+  "modelo": "Palio weekend",
+  "preco": "21500",
+  "ano": "1998",
+  "categoria": "SUV",
+  "cambio": "Automatico"
+},
+{
+  "_id": {
+    "$oid": "64627ef49de9bf074ca09a9a"
+  },
+  "marca": "Fiat",
+  "modelo": "Uno",
+  "preco": "2000",
+  "ano": "1995",
+  "categoria": "Hatch",
+  "cambio": "Manual"
+},
+{
+  "_id": {
+    "$oid": "646289cc2fec024b6ad448d0"
+  },
+  "marca": "Chevrolet",
+  "modelo": "Onix",
+  "ano": "2018",
+  "preco": "35000",
+  "categoria": "Hatch",
+  "combustivel": "Flex",
+  "transmissao": "Manual"
+},
+{
+  "_id": {
+    "$oid": "647109faf711fe6762c02df4"
+  },
+  "marca": "Fiat",
+  "modelo": "Palio",
+  "preco": "35000",
+  "ano": "2018",
+  "categoria": "caminhonete",
+  "cambio": "Automatico"
+},
+{
+  "_id": {
+    "$oid": "64f8ceb1f58d61898be59e6d"
+  },
+  "marca": "Toyota",
+  "modelo": "Corolla",
+  "preco": "87930",
+  "ano": "2019",
+  "categoria": "Sedan",
+  "cambio": "Manual"
+},
+{
+  "_id": {
+    "$oid": "653963a01974e24c5755deae"
+  },
+  "marca": "Ford",
+  "modelo": "Fusion",
+  "ano": 2015,
+  "preco": 45000,
+  "categoria": "Sedan",
+  "combustivel": "Flex",
+  "cambio": "Automático"
+}]
